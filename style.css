@@ -1,0 +1,161 @@
+@font-face {
+  font-family: 'Norse';
+  src: url('./fonts/Norse-Bold.otf') format('truetype');
+}
+
+body {
+    font-family: roboto, Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    margin: 0 170px;
+}
+
+.sidebar {
+    background-image: url(images/plant.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 780px;
+    width: 409px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: aliceblue;
+    text-align: center ;
+    flex-shrink: 0;
+}
+
+.logodiv {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 170px;
+}
+
+.logotext {
+    font-family: 'Norse','Courier New', Courier, monospace;
+    font-size: 70px;
+    margin-top: 20px;
+
+}
+
+.footer {
+    margin-top: auto;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: rgba(223, 223, 222, 0.818);
+}
+
+.footer a{
+    color: inherit;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.02);
+    gap: 20px;
+}
+
+.intro, .forms, .submit {
+    padding-left: 30px;
+}
+
+.intro {
+    font-family: roboto, Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 520;
+    padding-right: 100px;
+}
+
+.forms {
+    background-color: white;
+    box-shadow: 0 6px 6px -4px rgba(0, 0, 0, 0.1);
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+form {
+    color: green;
+}
+
+.forms label {
+     font-family: Arial, Helvetica, sans-serif;
+    font-size: 8px;
+      letter-spacing: 1.5px;
+    color: rgb(42, 48, 54);
+    font-weight: 700;
+}
+
+.forms p {
+    font-size: large;
+    color: black;
+}
+
+.linha {
+    display: flex;
+    gap: 60px;
+    margin-bottom: 15px;
+}
+
+.campo {
+  flex: 0 1 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+input {
+  height: 20px; /* mais alto */
+  border-radius: 4px; /* cantos arredondados retangulares */
+  border: 1.5px solid #dddddd95; /* borda clara */
+  padding-left: 5px;
+  font-size: 12px;
+  outline: none; /* remove contorno padrão */
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #007BFF;          /* borda azul clássica */
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1); /* sombra pra baixo e direita */
+  outline: none;                  /* remove o contorno padrão do navegador */
+}
+
+input:invalid:not(:placeholder-shown) {
+  border-color: red;
+  box-shadow: none;
+}
+
+.main {
+    padding-top: 0;
+    padding-bottom: 50px;
+}
+
+.submit {
+    padding-top: 10px;
+}
+
+.submit button {
+  background-color: #596D48;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 40px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.submit p {
+    font-size: 14px;
+}
+
+.submit a {
+    color: #596D48;
+}
